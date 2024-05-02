@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PUCP AR</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"> </script>
+    <script src="js/dataHandler.js"></script>
+</head>
+
+<body>
+    <!-- Para probar con patrones impresos -->
+    <!-- <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+        <a-marker preset="hiro">
+            <a-box position='0 0.5 0' material='color: pink;'></a-box>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene> -->
+
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
+        <!-- La entidad de cámara con GPS habilitado -->
+        <a-camera gps-camera rotation-reader></a-camera>
+    </a-scene>
+    <script src="./js/dataHandler.js"></script>
+
+</body>
+
+</html>
